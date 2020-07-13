@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+.para{
+	transform-origin: center;
+	position: absolute;
+	font-size: 48px;
+	opacity: 0.2;
+
+	transform: rotateY(45deg);
+
+/*	animation: rotateY 1s;
+	animation-fill-mode: forwards;*/
+
+	border: solid 1px black;
+	box-shadow: 2px 2px;
+}
+
+#one{
+	left: 20px;
+
+}
+
+#one:hover, #two:hover, #three:hover{
+	opacity: 1.0;
+	cursor: pointer;
+	transform: rotateY(0deg);
+	transition: transform 1s;
+}
+
+#two{
+	left: 120px;
+	animation-delay: 1s;
+}
+
+#three{
+	left: 220px;
+	animation-delay: 2s;
+}
+
+@keyframes rotateY{
+	0%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(45deg);
+	}
+}
+
+</style>
+<body>
+<p id="one" class="para">first paragraph</p>
+<p id="two" class="para">second paragraph</p>
+<p id="three" class="para">third paragraph
+<br>
+<img width="200px" height="auto" src="kj.png">
+</p>
+</body>
+</html>

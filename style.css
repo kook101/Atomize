@@ -1,0 +1,15 @@
+button {
+    height: 30px;
+    width: 130px;
+    outline: none;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .ato {
+      background-color: rgba(0, 0, 255, 0.1);
+
+  }
